@@ -24,10 +24,7 @@
         <Label x:Name="ProvideAListOfCells_Копировать1" Content="2 Specify pack dimensions" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="10" Margin="0,47,0,0"/>
         <Ellipse HorizontalAlignment="Right" Height="18" Margin="0,50,100,0" Stroke="#FF1B1818" VerticalAlignment="Top" Width="18" Fill="#FF2EF506" RenderTransformOrigin="0.481,-0.835"/>
         <Label x:Name="ProvideAListOfCells_Копировать2" Content="3 Generated pack" Margin="0,47,10,0" VerticalAlignment="Top" FontSize="10" HorizontalAlignment="Right"/>
-        <Button x:Name="btnCopyToClipboard" Content="Copy To Clipboard" HorizontalAlignment="Right" Margin="0,80,10,0" VerticalAlignment="Top" Height="25" Width="110"/>
-        <Button x:Name="btnExportCSV" Content="Export CSV" HorizontalAlignment="Right" Margin="0,80,130,0" VerticalAlignment="Top" Height="25" Width="110"/>
-        <Button x:Name="btnStartAgain" Content="Start Again" HorizontalAlignment="Right" Margin="0,80,250,0" VerticalAlignment="Top" Height="25" Width="110" Background="#FF1EFF14" Click="btnStartAgain_Click"/>
-        <RadioButton x:Name="rbCompact" Content="Compact" HorizontalAlignment="Right" Margin="0,80,370,0" VerticalAlignment="Top" Height="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnStartAgain" Content="Start Again" HorizontalAlignment="Right" Margin="0,80,10,0" VerticalAlignment="Top" Height="25" Width="110" Background="#FF1EFF14" Click="btnStartAgain_Click"/>
         <TextBox x:Name="tbGeneratedPack" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" FontSize="14" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="0,120,0,0"/>
 
     </Grid>

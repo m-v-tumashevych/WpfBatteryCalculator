@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfBatteryCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBatteryCalculator"
+        mc:Ignorable="d"
+        Title="BatteryCalculator" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Closed="Window_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Pack Builder" FontSize="18" FontWeight="Bold" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Comma separated list of cell capacities in mAH to be added to the packs" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="397" Height="26"/>
+        <TextBox x:Name="CellCapacitiesTB" Margin="10,110,10,140" AcceptsReturn="True" TextWrapping="Wrap" HorizontalScrollBarVisibility="Visible" BorderBrush="#FF0F0F10" VerticalScrollBarVisibility="Visible" MouseEnter="CellCapacitiesTB_MouseEnter" MouseLeave="CellCapacitiesTB_MouseLeave" GotFocus="CellCapacitiesTB_GotFocus"/>
+        <Button x:Name="BTNAddCells" Content="Add Cells" HorizontalAlignment="Left" Margin="10,0,0,90" VerticalAlignment="Bottom" Height="25" Width="180" Background="#FF1EFF0D" FontSize="16" FontWeight="Bold" Click="BTNAddCellsClick"/>
+        <Ellipse HorizontalAlignment="Left" Height="18" Margin="10,50,0,0" Stroke="#FF1B1818" VerticalAlignment="Top" Width="18" Fill="#FF3CE025"/>
+        <Label x:Name="ProvideAListOfCells" Content="1 Provide a list of cells" HorizontalAlignment="Left" Margin="30,47,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Ellipse HorizontalAlignment="Center" Height="18" Margin="0,50,150,0" Stroke="#FF1B1818" VerticalAlignment="Top" Width="18" Fill="#FFECF1EC"/>
+        <Label x:Name="ProvideAListOfCells_Копировать1" Content="2 Specify pack dimensions" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Ellipse HorizontalAlignment="Right" Height="18" Margin="0,50,100,0" Stroke="#FF1B1818" VerticalAlignment="Top" Width="18" Fill="#FFE0EADE"/>
+        <Label x:Name="ProvideAListOfCells_Копировать2" Content="3 Generated pack" HorizontalAlignment="Right" Margin="0,47,10,0" VerticalAlignment="Top" FontSize="10"/>
+
+    </Grid>
+</Window>
